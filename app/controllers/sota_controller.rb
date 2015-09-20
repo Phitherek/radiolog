@@ -1,0 +1,2 @@
+class SotaController < ApplicationController
+end

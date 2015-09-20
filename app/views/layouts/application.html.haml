@@ -1,0 +1,39 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title RadioLog
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %header
+      %h1 RadioLog
+      %p= t(:subtitle)
+    - if flash[:success]
+      .flash.success
+        = flash[:success]
+    - if flash[:notice]
+      .flash.notice
+        = flash[:notice]
+    - if flash[:error]
+      .flash.error
+        = flash[:error]
+    .userbox
+      - if @user.nil?
+        %p= t(:not_logged_in)
+        = link_to t(:login), "/auth/rlauth"
+      - else
+        %p= t(:logged_in_as, callsign: @user.callsign)
+        = link_to t(:logout), logout_path
+    .main
+      = yield
+    %footer
+      %p.created_by= t(:created_by)
+      %p.radiolog
+        = t(:radiolog_tools) + ":"
+        = link_to "RLAuth", "https://rlauth.phitherek.me"
+        |
+        = link_to "RLQTH", "https://rlqth.phitherek.me"
+        |
+        = link_to "RLCallsign", "https://rlcallsign.phitherek.me"

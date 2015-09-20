@@ -21,3 +21,14 @@
 
 en:
   hello: "Hello world"
+  subtitle: "A HAM radio multi-purpose logging system"
+  not_logged_in: "You are not logged in"
+  login: "Login via RLAuth"
+  logged_in_as: "You are logged in via RLAuth as %{callsign}"
+  logout: "Logout"
+  created_by: "Created by Phitherek_ SO9PH in 2015."
+  radiolog_tools: "Check out RadioLog Tools"
+  back: "Back"
+  general:
+    index:
+      login_required: Login required!
