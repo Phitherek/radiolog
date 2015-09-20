@@ -35,6 +35,7 @@ en:
     index:
       login_required: Login required!
     modes:
+      select_mode: "Select mode:"
       simple: Simple
       simple_description: " - only the most usual log fields"
       advanced: Advanced
