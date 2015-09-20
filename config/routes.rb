@@ -56,4 +56,6 @@ Rails.application.routes.draw do
 
   root to: "general#index"
   get "/modes", to: "general#modes"
+  get "/auth/:provider/callback", to: "general#omniauth_callback", as: :omniauth_callback
+  get "/logout", to: "general#logout"
 end
