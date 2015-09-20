@@ -29,6 +29,17 @@ en:
   created_by: "Created by Phitherek_ SO9PH in 2015."
   radiolog_tools: "Check out RadioLog Tools"
   back: "Back"
+  under_construction: "Under construction!"
+  available_soon: "This part of the system is still under development and will be available later."
   general:
     index:
       login_required: Login required!
+    modes:
+      simple: Simple
+      simple_description: " - only the most usual log fields"
+      advanced: Advanced
+      advanced_description: " - more sophisticated mode with eg. transmission types, frequencies and via fields"
+      contest: Contest
+      contest_description: " - a mode designed solely for contest purposes"
+      sota: SOTA
+      sota_description: " - a mode for SOTA activators and catchers"

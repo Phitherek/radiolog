@@ -1,0 +1,15 @@
+%h2= t(".select_mode")
+
+%ul
+  %li
+    = link_to t(".simple"), simple_path
+    = t(".simple_description")
+  %li
+    = link_to t(".advanced"), advanced_path
+    = t(".advanced_description")
+  %li
+    = link_to t(".contest"), contest_path
+    = t(".contest_description")
+  %li
+    = link_to t(".sota"), sota_path
+    = t(".sota_description")

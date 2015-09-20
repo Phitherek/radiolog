@@ -1,7 +1,6 @@
 class GeneralController < ApplicationController
 
-    before_filter :find_user
-    before_filter :user_only, only: [:logout, :modes]
+    skip_before_filter :user_only, only: [:index, :omniauth_callback]
 
     def index
         unless @user.nil?
