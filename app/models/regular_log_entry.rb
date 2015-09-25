@@ -9,7 +9,7 @@ class RegularLogEntry < ActiveRecord::Base
 
     belongs_to :remote_user
 
-    default_scope, -> { order(utc: :desc) }
+    default_scope { order(utc: :desc) }
     scope :for_callsign, ->(q) { where(to_callsign: q.to_s.upcase)}
     scope :from_utc, ->(q) { where("utc >= '#{q}''")}
     scope :to_utc, ->(q) { where("utc <= '#{q}'")}
