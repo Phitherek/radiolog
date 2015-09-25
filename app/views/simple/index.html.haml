@@ -3,4 +3,5 @@
   %p.empty= t(".empty")
 - else
   = render partial: "simple_table"
+= link_to t(".start_logging"), simple_logging_path
 = link_to t(:back), modes_path

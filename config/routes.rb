@@ -61,6 +61,7 @@ Rails.application.routes.draw do
 
   # Simple
     get "/simple", to: "simple#index"
+    get "/simple/logging", to: "simple#logging"
   # Advanced
     get "/advanced", to: "advanced#index"
   # Contest

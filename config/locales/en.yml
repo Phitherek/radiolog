@@ -21,7 +21,7 @@
 
 en:
   hello: "Hello world"
-  subtitle: "A HAM radio multi-purpose logging system"
+  subtitle: "A multi-purpose HAM radio logging system"
   not_logged_in: "You are not logged in"
   login: "Login via RLAuth"
   logged_in_as: "You are logged in via RLAuth as %{callsign}"
@@ -31,6 +31,10 @@ en:
   back: "Back"
   under_construction: "Under construction!"
   available_soon: "This part of the system is still under development and will be available later."
+  qsl:
+    no: "No"
+    yes: "Yes"
+    impossible: "Impossible"
   general:
     index:
       login_required: Login required!
@@ -44,3 +48,18 @@ en:
       contest_description: " - a mode designed solely for contest purposes"
       sota: SOTA
       sota_description: " - a mode for SOTA activators and catchers"
+  simple:
+    index:
+      simple_mode: Simple mode
+      empty: "You haven' t logged any QSOs yet. Start logging now!"
+      start_logging: Start logging
+    logging:
+      simple_mode: Simple mode
+  simple_table:
+    to_callsign: "To callsign:"
+    rst_from: "RST from:"
+    rst_to: "RST to:"
+    qth: "QTH:"
+    utc_date: "UTC date:"
+    utc_time: "UTC time:"
+    qsl: "QSL?"
