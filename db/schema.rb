@@ -11,10 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150920211353) do
+ActiveRecord::Schema.define(version: 20150922183919) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "regular_log_entries", force: :cascade do |t|
+    t.integer  "remote_user_id",                        null: false
+    t.string   "to_callsign",                           null: false
+    t.string   "rst_from"
+    t.string   "rst_to",                                null: false
+    t.string   "name"
+    t.string   "qth"
+    t.string   "qth_locator"
+    t.datetime "utc"
+    t.string   "notes"
+    t.string   "freq"
+    t.string   "mod"
+    t.string   "via"
+    t.string   "mode",                                  null: false
+    t.string   "qsl",            default: "impossible", null: false
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
+  end
 
   create_table "remote_sessions", force: :cascade do |t|
     t.string   "token"

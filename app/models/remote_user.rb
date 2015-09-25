@@ -5,4 +5,5 @@ class RemoteUser < ActiveRecord::Base
     scope :like, -> (q) { where("UPPER(callsign) LIKE UPPER('%#{q}%')") }
 
     has_many :remote_sessions
+    has_many :regular_log_entries
 end

@@ -1,3 +1,6 @@
-%h2= t(:under_construction)
-%p= t(:available_soon)
+%h2= t(".simple_mode")
+- if @entries.empty?
+  %p.empty= t(".empty")
+- else
+  = render partial: "simple_table"
 = link_to t(:back), modes_path
