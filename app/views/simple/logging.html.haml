@@ -13,13 +13,13 @@
       = f.text_field :name
       = f.label :qth
       = f.text_field :qth
-      = label_tag :utc_date
+      = label_tag :utc_date, t(:utc_date)
       = date_field_tag :utc_date, Time.now.utc.to_date
-      = label_tag :utc_time
-      = time_field_tag :utc_time, Time.now.utc.to_time
+      = label_tag :utc_time, t(:utc_time)
+      = time_field_tag :utc_time, format_time(Time.now.utc)
       = check_box_tag :auto_utc
-      = label_tag :auto_utc
-      = f.submit :submit_qso
+      = label_tag :auto_utc, t(:auto_utc)
+      = f.submit t(:submit_qso)
 %h3= t(".last_log_entries")
 .last_log_entries
   - if @entries.empty?

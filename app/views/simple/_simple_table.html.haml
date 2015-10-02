@@ -18,5 +18,5 @@
         %td= entry.name
         %td= entry.qth
         %td= entry.utc.to_date
-        %td= entry.utc.to_time
+        %td= format_time(entry.utc)
         %td= t("qsl." + entry.qsl.to_s)
