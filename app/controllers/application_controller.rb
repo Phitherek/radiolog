@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   before_filter :find_user
   before_filter :user_only
 
+  include ApplicationHelper
+
   protected
 
   def find_user
