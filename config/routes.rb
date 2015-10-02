@@ -70,4 +70,6 @@ Rails.application.routes.draw do
     get "/contest", to: "contest#index"
   # SOTA
     get "/sota", to: "sota#index"
+  # Heloer
+    get "/current_utc", to: "helper#get_current_utc"
 end
