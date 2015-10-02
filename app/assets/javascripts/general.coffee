@@ -5,6 +5,8 @@
 $ = jQuery
 
 fire_engines = ->
+    utc_date_input = $("input#utc_date")
+    utc_time_input = $("input#utc_time")
     if $("input#auto_utc:checked").length > 0
          utc_date_input.prop("disabled", true)
          utc_time_input.prop("disabled", true)
