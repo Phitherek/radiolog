@@ -31,6 +31,36 @@ en:
   back: "Back"
   under_construction: "Under construction!"
   available_soon: "This part of the system is still under development and will be available later."
+  utc_time: UTC time
+  utc_date: UTC date
+  auto_utc: Auto UTC
+  submit_qso: Submit QSO
+  activerecord:
+    models:
+      remote_user: Remote user
+      remote_session: Remote session
+      regular_log_entry: Regular log entry
+    attributes:
+      remote_user:
+        callsign: Callsign
+        email: E-mail
+      remote_session:
+        token: Token
+        token_expires: Token expires
+        refresh_token: Refresh token
+      regular_log_entry:
+        to_callsign: To callsign
+        rst_from: RST from
+        rst_to: RST to
+        name: Name
+        qth: QTH
+        qth_locator: QTH locator
+        notes: Notes
+        freq: Frequency
+        mod: Modulation
+        via: Via
+        mode: Mode
+        qsl: QSL
   qsl:
     no: "No"
     yes: "Yes"
@@ -57,6 +87,8 @@ en:
     logging:
       simple_mode: Simple mode
       logging: Logging
+      empty: "You haven' t logged any QSOs yet. Start logging now!"
+      last_log_entries: Last log entries
   simple_table:
     to_callsign: "To callsign:"
     rst_from: "RST from:"

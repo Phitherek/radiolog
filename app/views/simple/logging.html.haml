@@ -14,9 +14,9 @@
       = f.label :qth
       = f.text_field :qth
       = label_tag :utc_date
-      = date_field_tag :utc_date
+      = date_field_tag :utc_date, Time.now.utc.to_date
       = label_tag :utc_time
-      = time_field_tag :utc_time
+      = time_field_tag :utc_time, Time.now.utc.to_time
       = check_box_tag :auto_utc
       = label_tag :auto_utc
       = f.submit :submit_qso
