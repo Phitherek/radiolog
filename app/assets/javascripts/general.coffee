@@ -22,6 +22,7 @@ fire_engines = ->
         else
             utc_date_input.prop("disabled", false)
             utc_time_input.prop("disabled", false)
+    )
 
 auto_utc_update = ->
     auto_utc_input_checked = $("input#auto_utc:checked")
