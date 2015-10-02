@@ -17,8 +17,7 @@ fire_engines = ->
     $("input#auto_utc").change(->
         utc_date_input = $("input#utc_date")
         utc_time_input = $("input#utc_time")
-        console.log($(this))
-        if $(this).attr("checked")
+        if $("input#auto_utc").attr("checked")
             utc_date_input.prop("disabled", true)
             utc_time_input.prop("disabled", true)
             auto_utc_update()
