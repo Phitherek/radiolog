@@ -1,3 +1,29 @@
 %h2= t(".simple_mode")
-%p= t(:available_soon)
+%h3= t(".logging")
+.logging
+  = form_for @new_entry, remote: true do |f|
+    .row
+      = f.label :to_callsign
+      = f.text_field :to_callsign
+      = f.label :rst_to
+      = f.text_field :rst_to
+      = f.label :rst_from
+      = f.text_field :rst_from
+      = f.label :name
+      = f.text_field :name
+      = f.label :qth
+      = f.text_field :qth
+      = f.label :utc_date
+      = f.date_field :utc_date
+      = f.label :utc_time
+      = f.time_field :utc_time
+      = check_box_tag :auto_utc
+      = label_tag :auto_utc
+      = f.submit :submit_qso
+%h3= t(".last_log_entries")
+.last_log_entries
+  - if @entries.empty?
+    %p.empty= t(".empty")
+  - else
+    = render partial: "simple_table"
 = link_to t(:back), simple_path

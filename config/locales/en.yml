@@ -51,10 +51,12 @@ en:
   simple:
     index:
       simple_mode: Simple mode
+      your_log: Your log
       empty: "You haven' t logged any QSOs yet. Start logging now!"
       start_logging: Start logging
     logging:
       simple_mode: Simple mode
+      logging: Logging
   simple_table:
     to_callsign: "To callsign:"
     rst_from: "RST from:"

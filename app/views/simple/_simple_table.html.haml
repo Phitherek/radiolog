@@ -2,8 +2,9 @@
   %thead
     %tr
       %th= t(".to_callsign")
-      %th= t(".rst_from")
       %th= t(".rst_to")
+      %th= t(".rst_from")
+      %th= t(".name")
       %th= t(".qth")
       %th= t(".utc_date")
       %th= t(".utc_time")
@@ -12,8 +13,9 @@
     - @entries.each do |entry|
       %tr
         %td= entry.to_callsign
-        %td= entry.rst_from
         %td= entry.rst_to
+        %td= entry.rst_from
+        %td= entry.name
         %td= entry.qth
         %td= entry.utc.to_date
         %td= entry.utc.to_time
