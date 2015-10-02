@@ -33,7 +33,7 @@ auto_utc_update = ->
             utc_date_input = $("input#utc_date")
             utc_time_input = $("input#utc_time")
             utc_date_input.val(data.utc.date)
-            utc_time_input.val(data.utc.time)
+            utc_time_input.val(data.utc.ftime)
             setTimeout(auto_utc_update, 1000)
         )
 $(document).ready ->
