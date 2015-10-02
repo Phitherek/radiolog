@@ -32,6 +32,8 @@ auto_utc_update = ->
         $.get("/current_utc", (data) ->
             utc_date_input = $("input#utc_date")
             utc_time_input = $("input#utc_time")
+            console.log(data.date)
+            console.log(data.ftime)
             utc_date_input.val(data.date)
             utc_time_input.val(data.ftime)
             setTimeout(auto_utc_update, 1000)
