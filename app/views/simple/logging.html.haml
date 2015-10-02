@@ -17,7 +17,7 @@
       = date_field_tag :utc_date, Time.now.utc.to_date
       = label_tag :utc_time, t(:utc_time)
       = time_field_tag :utc_time, format_time(Time.now.utc)
-      = check_box_tag :auto_utc, checked: true
+      = check_box_tag :auto_utc, 1, checked: true
       = label_tag :auto_utc, t(:auto_utc)
       = f.submit t(:submit_qso)
 %h3= t(".last_log_entries")
