@@ -13,10 +13,10 @@
       = f.text_field :name
       = f.label :qth
       = f.text_field :qth
-      = f.label :utc_date
-      = f.date_field :utc_date
-      = f.label :utc_time
-      = f.time_field :utc_time
+      = label_tag :utc_date
+      = date_field_tag :utc_date
+      = label_tag :utc_time
+      = time_field_tag :utc_time
       = check_box_tag :auto_utc
       = label_tag :auto_utc
       = f.submit :submit_qso
