@@ -33,6 +33,7 @@ auto_utc_update = ->
             utc_date_input.val(data.date)
             utc_time_input.val(data.ftime)
             setTimeout(auto_utc_update, 1000)
+        )
 $(document).ready ->
     fire_engines()
 $(document).on("page:load", ->
