@@ -22,7 +22,7 @@
     .row
       = f.label :notes
     .row
-      = f.text_area :notes
+      = f.text_area :notes, rows: 10, cols: 30
     .row
       = f.submit t(:submit_qso)
 %h3= t(".last_log_entries")
