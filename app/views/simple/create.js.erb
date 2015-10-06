@@ -1,4 +1,6 @@
 $(".flashes").html("<%= escape_javascript(render({partial: "application/flashes", locals: {flash: flash}})) %>");
 <% if !@entry.new_record? %>
     $(".last_log_entries").html("<%= escape_javascript(render({partial: "simple/simple_table"})) %>");
+    $(".logging form input[type=text]").val("");
+    $(".logging form textarea").html("");
 <% end %>
