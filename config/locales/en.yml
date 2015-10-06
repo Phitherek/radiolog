@@ -35,6 +35,11 @@ en:
   utc_date: UTC date
   auto_utc: Auto UTC
   submit_qso: Submit QSO
+  flashes:
+    errors:
+      entry_create: "Error while creating entry: "
+    successes:
+      entry_create: "Successfully created entry!"
   activerecord:
     models:
       remote_user: Remote user

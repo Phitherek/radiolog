@@ -10,15 +10,8 @@
     %header
       %h1 RadioLog
       %p= t(:subtitle)
-    - if flash[:success]
-      .flash.success
-        = flash[:success]
-    - if flash[:notice]
-      .flash.notice
-        = flash[:notice]
-    - if flash[:error]
-      .flash.error
-        = flash[:error]
+      .flashes
+        = render partial: "application/flashes", locals: {flash: flash}
     .userbox
       - if @user.nil?
         %p= t(:not_logged_in)
