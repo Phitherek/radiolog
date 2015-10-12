@@ -13,7 +13,7 @@ class SimpleController < ApplicationController
     def create
         params[:regular_log_entry][:remote_user_id] = @user.id
         params[:regular_log_entry][:mode] = "simple"
-        DateTime utc = DateTime.parse(params[:utc_date] + " " + params[:utc_time])
+        utc = DateTime.parse(params[:utc_date] + " " + params[:utc_time])
         params[:regular_log_entry][:utc] = utc
         @to_user = RemoteUser.find_by_callsign(params[:regular_log_entry][:to_callsign])
         if @to_user.nil?
