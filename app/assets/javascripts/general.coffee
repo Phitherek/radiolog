@@ -28,9 +28,11 @@ fire_engines = ->
     )
     utc_date_input.change(->
         $("input#utc_date").attr("value", $("input#utc_date").val())
+    )
 
     utc_time_input.change(->
         $("input#utc_time").attr("value", $("input#utc_time").val())
+    )
 
 auto_utc_update = ->
     auto_utc_input_checked = $("input#auto_utc:checked")
