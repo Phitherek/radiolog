@@ -2,5 +2,8 @@ $(".flashes").html("<%= escape_javascript(render({partial: "application/flashes"
 <% if !@entry.new_record? %>
     $(".last_log_entries").html("<%= escape_javascript(render({partial: "simple/simple_table"})) %>");
     $(".logging form input[type=text]").val("");
-    $(".logging form textarea").html("");
+    $(".logging form textarea").val("");
+    $("#auto_utc").prop("checked", true);
+    $("input#utc_date").prop("disabled", true);
+    ${"input#utc_time").prop("disabled", true);
 <% end %>

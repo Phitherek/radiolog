@@ -102,3 +102,4 @@ en:
       utc_date: "UTC date:"
       utc_time: "UTC time:"
       qsl: "QSL?"
+      name: "Name:"
