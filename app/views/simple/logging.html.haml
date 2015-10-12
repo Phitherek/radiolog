@@ -24,6 +24,7 @@
     .row
       = f.text_area :notes, rows: 10, cols: 30
     .row
+      = token_tag
       = f.submit t(:submit_qso)
 %h3= t(".last_log_entries")
 .last_log_entries
