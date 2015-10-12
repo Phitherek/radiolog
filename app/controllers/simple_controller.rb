@@ -1,4 +1,4 @@
-require 'datetime'
+require 'date'
 
 class SimpleController < ApplicationController
     def index
