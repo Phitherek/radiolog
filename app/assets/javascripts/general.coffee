@@ -33,7 +33,7 @@ fire_engines = ->
     utc_time_input.change(->
         $("input#utc_time").attr("value", $("input#utc_time").val())
     )
-    $("form#regular_log_entry").submit(->
+    $("form#new_regular_log_entry").submit(->
         $("input#auto_utc").prop("checked", false)
         utc_date_input.prop("disabled", false)
         utc_time_input.prop("disabled", false)

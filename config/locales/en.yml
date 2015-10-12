@@ -94,11 +94,11 @@ en:
       logging: Logging
       empty: "You haven' t logged any QSOs yet. Start logging now!"
       last_log_entries: Last log entries
-  simple_table:
-    to_callsign: "To callsign:"
-    rst_from: "RST from:"
-    rst_to: "RST to:"
-    qth: "QTH:"
-    utc_date: "UTC date:"
-    utc_time: "UTC time:"
-    qsl: "QSL?"
+    simple_table:
+      to_callsign: "To callsign:"
+      rst_from: "RST from:"
+      rst_to: "RST to:"
+      qth: "QTH:"
+      utc_date: "UTC date:"
+      utc_time: "UTC time:"
+      qsl: "QSL?"
