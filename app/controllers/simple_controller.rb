@@ -1,3 +1,5 @@
+require 'datetime'
+
 class SimpleController < ApplicationController
     def index
         @entries = @user.regular_log_entries
