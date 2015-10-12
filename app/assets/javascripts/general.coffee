@@ -24,7 +24,13 @@ fire_engines = ->
         else
             utc_date_input.prop("disabled", false)
             utc_time_input.prop("disabled", false)
+
     )
+    utc_date_input.change(->
+        $("input#utc_date").attr("value", $("input#utc_date").val())
+
+    utc_time_input.change(->
+        $("input#utc_time").attr("value", $("input#utc_time").val())
 
 auto_utc_update = ->
     auto_utc_input_checked = $("input#auto_utc:checked")
@@ -33,9 +39,7 @@ auto_utc_update = ->
             utc_date_input = $("input#utc_date")
             utc_time_input = $("input#utc_time")
             utc_date_input.val(data.utc.date)
-            utc_date_input.attr("value", data.utc.date)
             utc_time_input.val(data.utc.ftime)
-            utc_time_input.attr("value", data.utc.ftime)
             setTimeout(auto_utc_update, 1000)
         )
 $(document).ready ->
