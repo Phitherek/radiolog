@@ -58,6 +58,3 @@ $(document).ready ->
 $(document).on("page:load", ->
     fire_engines()
 )
-$(document).ajaxComplete( ->
-    auto_utc_update()
-)
