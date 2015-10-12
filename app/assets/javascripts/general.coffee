@@ -35,6 +35,9 @@ fire_engines = ->
     )
     $("form#regular_log_entry").submit(->
         $("input#auto_utc").prop("checked", false)
+        utc_date_input.prop("disabled", false)
+        utc_time_input.prop("disabled", false)
+        $("form#regular_log_entry").trigger('submit.rails')
         true
     )
 
