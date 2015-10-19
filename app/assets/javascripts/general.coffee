@@ -37,7 +37,7 @@ fire_engines = ->
         $("input#auto_utc").prop("checked", false)
         utc_date_input.prop("disabled", false)
         utc_time_input.prop("disabled", false)
-        $.get('/simple/create', $("form#new_regular_log_entry").serialize())
+        $.post('/simple/create', $("form#new_regular_log_entry").serialize())
         false
     )
 
