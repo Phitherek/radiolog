@@ -39,6 +39,10 @@ fire_engines = ->
         utc_time_input.prop("disabled", false)
         true
     )
+    focus_form($(".logging form"))
+
+focus_form = (form) ->
+    form.find("input[type=text]").first().focus()
 
 auto_utc_update = ->
     auto_utc_input_checked = $("input#auto_utc:checked")
