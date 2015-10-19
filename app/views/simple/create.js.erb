@@ -1,25 +1,9 @@
-var auto_utc_update = function() {
-    var auto_utc_input_checked = $("input#auto_utc:checked");
-    if(auto_utc_input_checked.length > 0) {
-        $.get("/current_utc", function(data) {
-            var utc_date_input = $("input#utc_date");
-            var utc_time_input = $("input#utc_time");
-            utc_date_input.val(data.utc.date);
-            utc_date_input.attr("value", data.utc.date);
-            utc_time_input.val(data.utc.ftime);
-            utc_time_input.attr("value", data.utc.ftime);
-            setTimeout(auto_utc_update, 1000);
-        });
-    }
-}
-
 $(".flashes").html("<%= escape_javascript(render({partial: "application/flashes", locals: {flash: flash}})) %>");
 <% if !@entry.new_record? %>
     $(".last_log_entries").html("<%= escape_javascript(render({partial: "simple/simple_table"})) %>");
     $(".logging form input[type=text]").val("");
     $(".logging form textarea").val("");
     $("#auto_utc").prop("checked", true);
-    $("input#utc_date").prop("disabled", true);
-    $("input#utc_time").prop("disabled", true);
-    auto_utc_update();
+    $("#auto_utc").change();
+    $(".logging form input[type=text]").first().focus();
 <% end %>
