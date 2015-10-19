@@ -1,7 +1,7 @@
 %h2= t(".simple_mode")
 %h3= t(".logging")
 .logging
-  = form_for @new_entry, url: simple_create_path, remote: true do |f|
+  = form_for @new_entry, url: "#" do |f|
     .row
       = f.label :to_callsign
       = f.text_field :to_callsign
